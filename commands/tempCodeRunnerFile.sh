@@ -1,0 +1,1 @@
+docker run --name SiteUAT -p 8086:80 -e "AppSettings:storename"="Plano" -e "AppSettings:environment"="UAT" dockertraining_eliel_mendoza

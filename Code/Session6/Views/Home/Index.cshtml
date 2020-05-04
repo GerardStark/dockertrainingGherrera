@@ -1,0 +1,23 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+    <div class="text-center">
+        <h1 class="display-4">Welcome</h1>
+        <h2 class="display-3">@ViewBag.TitleVar</h2>
+        <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+
+        <div class="container">
+            @foreach (var item in ViewBag.DataSource)
+            {
+                <div class="card text-left">
+                    <img class="card-img-top" src="holder.js/100px180/" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">@item</h4>
+                        <p class="card-text">Body</p>
+                    </div>
+                </div>
+            }
+
+        </div>
+    </div>
